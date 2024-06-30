@@ -1,0 +1,13 @@
+name = "plutovg-fortran"
+version = "1.0.0"
+license = "MIT"
+author = "ezz el-dean"
+copyright = "Copyright 2024, ezz el-dean"
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+[install]
+library = false
+
