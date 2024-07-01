@@ -8,7 +8,7 @@ interface
 
 ! int32_t get_pixel(const plutovg_surface_t* surface, int x, int y);
 function get_pixel(surface, x, y) bind(c)
-  import :: c_ptr, c_int,c_int32_t
+  import :: c_ptr, c_int, c_int32_t
   implicit none
   integer(c_int32_t) :: get_pixel
   type(c_ptr), value :: surface
@@ -17,13 +17,13 @@ function get_pixel(surface, x, y) bind(c)
 end function
 
 ! void set_pixel(const plutovg_surface_t* surface, int x, int y,int32_t pixel);
-subroutine set_pixel(surface, x, y,pixel) bind(c)
-  import :: c_ptr, c_int,c_int32_t
+subroutine set_pixel(surface, x, y, pixel) bind(c)
+  import :: c_ptr, c_int, c_int32_t
   implicit none
   type(c_ptr), value :: surface
   integer(c_int), value :: x
   integer(c_int), value :: y
-  integer(c_int32_t) :: pixel
+  integer(c_int32_t), value :: pixel
 end subroutine
 
 
