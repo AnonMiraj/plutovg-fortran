@@ -69,4 +69,5 @@ program smiley_face
 end program smiley_face
 ```
 output :
+
 ![smiley.png](smiley.png)
